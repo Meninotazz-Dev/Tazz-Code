@@ -1,0 +1,159 @@
+/* Site do TazzCode - estilos */
+/* VOICE occasion: um site de download feito por um jovem programador, alegre mas organizado
+   IDEA a própria logo TC: quadrados coloridos atrás de um círculo azul; o site é feito de blocos assim
+   PICTURE o editor TazzCode desenhado grande (abas, código colorido, console, painel do TazzHelper)
+   COLOUR azul-real da logo, ciano, vermelho e coral como blocos; fundo branco / noite azul-escura
+   TYPE Fredoka (letra redonda da logo) + Nunito Sans; JetBrains Mono no código
+   LAYOUT laptop: título e botão em cima, editor largo embaixo cercado de blocos; celular: empilha */
+:root{color-scheme:light dark;
+--bg:light-dark(#ffffff,#0b1020);--ink:light-dark(#0d1033,#eef2ff);--fraco:light-dark(#4a5078,#a9b2d6);
+--azul:#1414e6;--ciano:#00b2f0;--verm:#e8141e;--coral:#f05a5f;
+--sup:light-dark(#f2f5ff,#141a33);--linha:light-dark(#d9def5,#262f55);
+--ed:#0f1424;--ed2:#141a28;--edt:#e8f1ff}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+html{scroll-padding-top:76px}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 "Nunito Sans",system-ui,sans-serif;overflow-x:clip}
+a{color:inherit}
+img{max-width:100%}
+h1,h2,h3{font-family:Fredoka,"Nunito Sans",sans-serif;line-height:1.05;letter-spacing:-.01em;text-wrap:balance;margin:0}
+h2{font-size:clamp(30px,4vw,44px)}
+h3{font-size:22px}
+.band{padding:clamp(36px,5vw,72px) max(5vw,16px)}
+.in{max-width:1240px;margin:0 auto}
+/* topo */
+nav{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--linha)}
+nav .in{display:flex;align-items:center;gap:20px;padding:10px max(5vw,16px);flex-wrap:wrap}
+.marca{display:flex;align-items:center;gap:10px;font:600 22px Fredoka,sans-serif;text-decoration:none}
+.marca img{width:40px;height:40px}
+nav .links{display:flex;gap:18px;flex-wrap:wrap;margin-left:auto;font-weight:700;font-size:15px}
+nav .links a{text-decoration:none;padding:10px 2px}
+nav .links a:hover{color:var(--azul)}
+/* botões */
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:12px 22px;border-radius:14px;font:600 18px Fredoka,sans-serif;text-decoration:none;border:0;cursor:pointer}
+.btn.pri{background:var(--azul);color:#fff;box-shadow:0 5px 0 #0a0a8c}
+.btn.pri:hover{transform:translateY(-2px);box-shadow:0 7px 0 #0a0a8c}
+.btn.pri:active{transform:translateY(3px);box-shadow:0 2px 0 #0a0a8c}
+.btn.sec{background:var(--sup);color:var(--ink);border:2px solid var(--linha)}
+.btn:focus-visible{outline:3px solid var(--ciano);outline-offset:3px}
+/* primeira tela */
+.hero{position:relative;overflow:hidden;padding-bottom:0}
+.hero .topo{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:32px;align-items:end;position:relative;z-index:1}
+.hero h1{font-size:clamp(40px,6vw,72px)}
+.hero h1 span{display:block;font-size:.5em;color:var(--fraco);font-weight:500;margin-top:10px}
+.hero .acao{display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+.hero .acao small{color:var(--fraco);font-size:14px}
+.nums{display:flex;gap:24px;flex-wrap:wrap;margin-top:6px}
+.nums b{display:block;font:700 30px Fredoka,sans-serif;color:var(--azul)}
+:root[data-theme=dark] .nums b{color:var(--ciano)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]) .nums b{color:var(--ciano)}}
+.nums span{font-size:14px;color:var(--fraco)}
+.palco{position:relative;margin-top:40px;padding:0 4% 0}
+.bloco{position:absolute;border-radius:6px}
+.b1{background:var(--azul);width:22%;height:62%;left:0;top:-6%}
+.b2{background:var(--coral);width:16%;height:30%;right:6%;top:-10%}
+.b3{background:var(--ciano);width:30%;height:70%;right:0;bottom:0}
+.b4{background:var(--verm);width:12%;height:38%;left:3%;bottom:0}
+/* o editor desenhado */
+.editor{position:relative;z-index:1;background:var(--ed);color:var(--edt);border-radius:14px 14px 0 0;overflow:hidden;box-shadow:0 -2px 0 #2a3350 inset,0 20px 50px rgba(5,10,40,.35);font:14px/1.7 "JetBrains Mono",monospace}
+.e-barra{display:flex;align-items:center;gap:8px;background:#141a28;padding:8px 12px;font:13px "Nunito Sans",sans-serif;color:#a9b2d6;flex-wrap:wrap}
+.e-barra img{width:18px;height:18px}
+.e-barra .menus{display:flex;gap:14px}
+.e-barra .run{margin-left:auto;display:flex;gap:6px}
+.e-barra .run i{font-style:normal;padding:3px 10px;border-radius:6px;background:#1f2a44;color:#e8f1ff}
+.e-barra .run i.v{background:#1d9e4f}
+.e-barra .run i.h{background:var(--azul)}
+.e-corpo{display:grid;grid-template-columns:150px minmax(0,1fr) 230px;min-height:330px}
+.arv{background:#111726;padding:10px;font:13px/1.9 "Nunito Sans",sans-serif;color:#a9b2d6;border-right:1px solid #1f2740}
+.arv b{color:#e8f1ff}
+.arv .l{display:inline-block;width:16px;height:16px;border-radius:4px;font:700 10px/16px sans-serif;text-align:center;color:#fff;margin-right:6px;vertical-align:-3px}
+.cod{display:flex;flex-direction:column;min-height:0}
+.abas{display:flex;background:#141a28;font:13px "Nunito Sans",sans-serif}
+.abas span{padding:7px 14px;color:#7f89b0}
+.abas span.on{background:var(--ed);color:#6ec3ff;border-top:2px solid #3d8bff}
+pre.c{margin:0;padding:10px 0;overflow:hidden;white-space:pre;flex:1}
+.ln{display:inline-block;width:38px;text-align:right;padding-right:14px;color:#4a5578}
+.k{color:#c792ea}.t{color:#56c8d8}.s{color:#c3e88d}.m{color:#82aaff}.n{color:#f78c6c}.cm{color:#5c6890;font-style:italic}
+.cons{background:#0b0f1c;border-top:1px solid #1f2740;padding:8px 14px;font-size:13px;line-height:1.6}
+.cons .ok{color:#3ddc84}.cons .az{color:#6ec3ff}
+.helper{background:#121828;border-left:1px solid #1f2740;padding:12px;font:13px/1.5 "Nunito Sans",sans-serif;display:flex;flex-direction:column;gap:10px}
+.helper .tt{font-weight:700;color:#6ec3ff}
+.helper .msg{background:#1a2238;border-radius:10px;padding:8px 10px}
+.helper .eu{background:#1414e6;color:#fff;align-self:flex-end;max-width:85%}
+.cursor{display:inline-block;width:2px;height:1.1em;background:#6ec3ff;vertical-align:-2px;animation:pisca 1s steps(1) infinite}
+@keyframes pisca{50%{opacity:0}}
+@media(prefers-reduced-motion:reduce){.cursor{animation:none}.btn.pri:hover{transform:none}}
+/* recursos */
+.grade{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:32px}
+.card{background:var(--sup);border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:10px}
+.card p{margin:0;color:var(--fraco)}
+.card .ic{width:52px;height:52px}
+.card.grande{grid-column:span 2;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px;align-items:center}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips span{font:600 13px "JetBrains Mono",monospace;padding:5px 9px;border-radius:8px;background:var(--bg);border:1px solid var(--linha)}
+/* passos */
+.azul{background:var(--azul);color:#fff}
+.azul .fraco{color:#c8ccff}
+.passos{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-top:30px;padding:0;list-style:none;counter-reset:p}
+.passos li{background:rgba(255,255,255,.1);border-radius:16px;padding:20px;counter-increment:p}
+.passos li::before{content:counter(p);display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:#fff;color:var(--azul);font:700 22px Fredoka,sans-serif;margin-bottom:12px}
+.passos li:nth-child(2)::before{background:var(--ciano);color:#fff}
+.passos li:nth-child(3)::before{background:var(--coral);color:#fff}
+.passos li:nth-child(4)::before{background:var(--verm);color:#fff}
+.passos p{margin:6px 0 0;color:#dfe2ff;font-size:16px}
+.aviso{margin-top:24px;background:rgba(0,0,0,.18);border-radius:14px;padding:16px 18px;color:#eef0ff;font-size:16px}
+/* requisitos e novidades */
+.duas{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px}
+table{width:100%;border-collapse:collapse;margin-top:18px;font-size:16px}
+th,td{text-align:left;padding:12px 8px;border-bottom:1px solid var(--linha);vertical-align:top}
+th{font-weight:700;width:38%}
+.versao{border-left:4px solid var(--ciano);padding:2px 0 2px 16px;margin-top:20px}
+.versao h3{font-size:20px}
+.versao ul{margin:8px 0 0;padding-left:20px;color:var(--fraco)}
+/* perguntas */
+details{border-bottom:1px solid var(--linha);padding:4px 0}
+summary{cursor:pointer;font:600 19px Fredoka,sans-serif;padding:14px 0;list-style-position:outside}
+details p{margin:0 0 16px;color:var(--fraco);max-width:70ch}
+footer{background:#0b1020;color:#a9b2d6;font-size:15px}
+footer .in{display:flex;gap:24px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+footer .marca{color:#fff}
+footer p{margin:0;max-width:62ch}
+@media(max-width:980px){.e-corpo{grid-template-columns:120px minmax(0,1fr)}.helper{display:none}.passos{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.hero .topo,.duas,.card.grande{grid-template-columns:minmax(0,1fr)}.grade{grid-template-columns:minmax(0,1fr)}.card.grande{grid-column:auto}nav .links{display:none}}
+@media(max-width:520px){.e-corpo{grid-template-columns:minmax(0,1fr)}.arv{display:none}.e-barra .menus{display:none}.passos{grid-template-columns:minmax(0,1fr)}.editor{font-size:12px}.ln{width:26px;padding-right:8px}}
+
+/* ---------- página de downloads ---------- */
+.dl-topo h1{font-size:clamp(36px,5vw,56px)}
+.dl-topo p{color:var(--fraco);max-width:60ch;margin:14px 0 0}
+.sis{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:8px}
+.so{border-radius:22px;overflow:hidden;background:var(--sup);display:flex;flex-direction:column}
+.so-cab{padding:24px;color:#fff;display:flex;gap:16px;align-items:center}
+.so-cab svg{flex:none;width:56px;height:56px}
+.so-cab h2{font-size:32px}
+.so-cab span{display:block;opacity:.85;font-size:15px;margin-top:4px}
+.win .so-cab{background:var(--azul)}
+.lin .so-cab{background:#0d1033}
+.so-corpo{padding:22px 24px 26px;display:flex;flex-direction:column;gap:16px;flex:1}
+.so-corpo .btn{align-self:flex-start}
+.arq{display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 14px;font-size:15px}
+.arq dt{color:var(--fraco)}
+.arq dd{margin:0;overflow-wrap:anywhere}
+.so ol{margin:0;padding-left:22px}
+.so ol li{margin:4px 0}
+.cmd{display:flex;align-items:center;gap:8px;background:#0b1020;color:#e8f1ff;border-radius:12px;padding:10px 12px;font:14px "JetBrains Mono",monospace}
+.cmd code{flex:1;overflow-x:auto;white-space:nowrap}
+.cmd button{flex:none;min-height:36px;padding:6px 12px;border-radius:8px;border:0;background:#1f2a44;color:#e8f1ff;font:600 14px "Nunito Sans",sans-serif;cursor:pointer}
+.cmd button:focus-visible{outline:3px solid var(--ciano)}
+.hash{font:12px "JetBrains Mono",monospace;color:var(--fraco);overflow-wrap:anywhere}
+.nota{font-size:15px;color:var(--fraco);margin:0}
+.outras{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:24px}
+.outras .card h3{font-size:20px}
+@media(max-width:860px){.sis,.outras{grid-template-columns:minmax(0,1fr)}}
+
+/* pacotes do Linux */
+.pacote{display:flex;flex-direction:column;gap:8px;padding:14px;border:1px solid var(--linha);border-radius:14px;background:var(--bg)}
+.pacote-topo{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.pacote-topo b{display:block;font-size:16px;line-height:1.35}
+.pacote-topo span{font-size:14px;color:var(--fraco)}
+.btn.peq{min-height:40px;padding:8px 14px;font-size:16px}
+code.mini{font:13px "JetBrains Mono",monospace;background:var(--sup);border:1px solid var(--linha);border-radius:6px;padding:1px 5px;white-space:nowrap}

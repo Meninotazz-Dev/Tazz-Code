@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TazzCode</title>
+<meta name="description" content="TazzCode: editor de código grátis para Windows, com 114 linguagens, plugins e o TazzHelper, uma IA que roda no seu PC.">
+<link rel="icon" type="image/png" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<nav><div class="in">
+  <a class="marca" href="#topo"><img src="img/logo.png" alt="">TazzCode</a>
+  <div class="links"><a href="#recursos">Recursos</a><a href="#instalar">Como instalar</a><a href="#novidades">Novidades</a><a href="#perguntas">Perguntas</a><a href="downloads.html">Downloads</a></div>
+  <a class="btn pri" href="downloads.html" style="min-height:42px;padding:8px 16px;font-size:16px">Baixar</a>
+</div></nav>
+
+<header class="band hero" id="topo"><div class="in">
+  <div class="topo">
+    <h1>Um editor de código feito do zero, em Java.<span>Grátis, para Windows, com 114 linguagens e uma IA que roda no seu PC.</span></h1>
+    <div class="acao">
+      <a class="btn pri" href="downloads/Instalar-TazzCode-0.7.exe">
+        <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Baixar para Windows
+      </a>
+      <a class="btn sec" href="downloads.html#linux">Linux e outras opções</a>
+      <small>Windows 10 e 11 · 12 distribuições Linux · Java já incluso</small>
+      <div class="nums">
+        <div><b>114</b><span>linguagens</span></div>
+        <div><b>49</b><span>plugins</span></div>
+        <div><b>83</b><span>modelos de projeto</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="palco">
+    <div class="bloco b1"></div><div class="bloco b2"></div><div class="bloco b3"></div><div class="bloco b4"></div>
+    <div class="editor" role="img" aria-label="Tela do TazzCode com um código em Java, o console e o TazzHelper">
+      <div class="e-barra">
+        <img src="img/logo.png" alt=""><b style="color:#e8f1ff">TazzCode</b>
+        <span class="menus"><span>Arquivo</span><span>Editar</span><span>Exibir</span><span>Executar</span><span>Plugins</span><span>Ajuda</span></span>
+        <span class="run"><i class="v">▶ Rodar</i><i>com: Java</i><i class="h">◆ TazzHelper</i></span>
+      </div>
+      <div class="e-corpo">
+        <div class="arv">
+          <b>MeuJogo</b><br>
+          <span class="l" style="background:#e76f00">J</span>Main.java<br>
+          <span class="l" style="background:#e76f00">J</span>Jogador.java<br>
+          <span class="l" style="background:#3572a5">P</span>placar.py<br>
+          <span class="l" style="background:#e34c26">H</span>index.html<br>
+          <span class="l" style="background:#563d7c">C</span>estilo.css
+        </div>
+        <div class="cod">
+          <div class="abas"><span class="on">Main.java</span><span>Jogador.java</span><span>placar.py</span></div>
+<pre class="c"><span class="ln">1</span><span class="k">import</span> java.util.<span class="t">Scanner</span>;
+<span class="ln">2</span>
+<span class="ln">3</span><span class="k">public class</span> <span class="t">Main</span> {
+<span class="ln">4</span>    <span class="k">public static void</span> <span class="m">main</span>(<span class="t">String</span>[] args) {
+<span class="ln">5</span>        <span class="t">Scanner</span> ler = <span class="k">new</span> <span class="t">Scanner</span>(<span class="t">System</span>.in);
+<span class="ln">6</span>        <span class="t">System</span>.out.<span class="m">print</span>(<span class="s">"Seu nome: "</span>);
+<span class="ln">7</span>        <span class="t">String</span> nome = ler.<span class="m">nextLine</span>();
+<span class="ln">8</span>        <span class="k">int</span> vidas = <span class="n">3</span>;  <span class="cm">// começa com 3 vidas</span>
+<span class="ln">9</span>        <span class="t">System</span>.out.<span class="m">println</span>(<span class="s">"Bora, "</span> + nome + <span class="s">"!"</span>);<span class="cursor"></span>
+<span class="ln">10</span>    }
+<span class="ln">11</span>}</pre>
+          <div class="cons"><span class="az">&gt; java Main.java</span><br>Seu nome: João<br>Bora, João!<br><span class="ok">[Terminou com código 0 em 0,41s]</span></div>
+        </div>
+        <div class="helper">
+          <div class="tt">◆ TazzHelper</div>
+          <div class="msg eu">o que faz o Scanner?</div>
+          <div class="msg">O <b>Scanner</b> lê o que você digita no console. Na linha 7, o <b>nextLine()</b> espera você escrever e apertar Enter.</div>
+          <div class="msg" style="color:#a9b2d6">Dica: feche o Scanner no fim com <b>ler.close()</b>.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></header>
+
+<section class="band" id="recursos"><div class="in">
+  <h2>Tudo pra escrever, rodar e aprender</h2>
+  <div class="grade">
+    <div class="card grande">
+      <div>
+        <h3>114 linguagens, um botão</h3>
+        <p>Escreva e aperte <b>F5</b>. O TazzCode sabe compilar e rodar cada linguagem, com cores no código, autocompletar e console que aceita digitar.</p>
+      </div>
+      <div class="chips" id="chips"></div>
+    </div>
+    <div class="card">
+      <svg class="ic" viewBox="0 0 52 52" aria-hidden="true"><rect width="52" height="52" rx="14" fill="#1414e6"/><path d="M15 33c0-8 5-14 11-14s11 6 11 14" stroke="#fff" stroke-width="3" fill="none"/><circle cx="21" cy="27" r="2.5" fill="#00b2f0"/><circle cx="31" cy="27" r="2.5" fill="#00b2f0"/><path d="M26 12v6" stroke="#f05a5f" stroke-width="3" stroke-linecap="round"/></svg>
+      <h3>TazzHelper, a IA da casa</h3>
+      <p>Explica erros, conceitos e o seu código linha por linha. Roda no seu PC, sem internet, e no modo professor dá dicas em vez de respostas prontas.</p>
+    </div>
+    <div class="card">
+      <svg class="ic" viewBox="0 0 52 52" aria-hidden="true"><rect width="52" height="52" rx="14" fill="#00b2f0"/><rect x="13" y="16" width="26" height="22" rx="4" fill="#fff"/><path d="M20 16v-4M32 16v-4" stroke="#fff" stroke-width="3" stroke-linecap="round"/><rect x="19" y="24" width="14" height="4" rx="2" fill="#1414e6"/></svg>
+      <h3>Plugins: nada pra instalar</h3>
+      <p>Não tem Python, Go ou GCC no PC? Um clique baixa a linguagem portátil pra pasta do TazzCode, direto do site oficial dela.</p>
+    </div>
+    <div class="card">
+      <svg class="ic" viewBox="0 0 52 52" aria-hidden="true"><rect width="52" height="52" rx="14" fill="#f05a5f"/><ellipse cx="26" cy="16" rx="11" ry="4" fill="#fff"/><path d="M15 16v20c0 2 5 4 11 4s11-2 11-4V16" fill="none" stroke="#fff" stroke-width="3"/><path d="M15 26c0 2 5 4 11 4s11-2 11-4" fill="none" stroke="#fff" stroke-width="3"/></svg>
+      <h3>Banco de dados de mentirinha</h3>
+      <p>SQL, MongoDB e Redis abrem uma janela que simula o banco. Dá pra criar tabelas e testar consultas sem instalar servidor nenhum.</p>
+    </div>
+    <div class="card">
+      <svg class="ic" viewBox="0 0 52 52" aria-hidden="true"><rect width="52" height="52" rx="14" fill="#e8141e"/><path d="M19 18l-7 8 7 8M33 18l7 8-7 8" stroke="#fff" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 36c3-2 5-2 8 0" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg>
+      <h3>HTML que avisa o erro</h3>
+      <p>Tag esquecida ou escrita errada ganha uma ondinha vermelha, com sugestão e conserto rápido no <b>Alt+Enter</b>.</p>
+    </div>
+    <div class="card">
+      <svg class="ic" viewBox="0 0 52 52" aria-hidden="true"><rect width="52" height="52" rx="14" fill="#0d1033"/><rect x="12" y="13" width="12" height="12" rx="3" fill="#1414e6"/><rect x="28" y="13" width="12" height="12" rx="3" fill="#00b2f0"/><rect x="12" y="29" width="12" height="12" rx="3" fill="#f05a5f"/><rect x="28" y="29" width="12" height="12" rx="3" fill="#e8141e"/></svg>
+      <h3>83 modelos de projeto</h3>
+      <p>Jogo em Java, site com HTML e CSS, Flask, React e muitos outros: o projeto já nasce com os arquivos certos e pronto pra rodar.</p>
+    </div>
+  </div>
+</div></section>
+
+<section class="band azul" id="instalar"><div class="in">
+  <h2>Como instalar</h2>
+  <ol class="passos">
+    <li><h3>Baixe</h3><p>Clique em <b>Baixar</b> e salve o arquivo <b>Instalar-TazzCode-0.7.exe</b>.</p></li>
+    <li><h3>Abra o instalador</h3><p>Dê dois cliques. O Windows pede permissão de administrador: clique em <b>Sim</b>.</p></li>
+    <li><h3>Avance</h3><p>Escolha se quer atalho na Área de Trabalho e clique em <b>Instalar</b>.</p></li>
+    <li><h3>Programe!</h3><p>Abra o TazzCode pelo menu Iniciar, crie um projeto e aperte <b>F5</b>.</p></li>
+  </ol>
+  <p class="aviso"><b>O Windows ou o antivírus disse "aplicativo não reconhecido"?</b> Isso acontece com todo programa novo que ainda não tem assinatura digital. Clique em <b>Mais informações</b> e depois em <b>Executar assim mesmo</b>. Se ficar em dúvida, peça ajuda pra um adulto.</p>
+</div></section>
+
+<section class="band" id="novidades"><div class="in duas">
+  <div>
+    <h2>O que precisa</h2>
+    <table>
+      <tr><th>Sistema</th><td>Windows 10 ou 11, 64 bits; ou Linux 64 bits: Ubuntu, Debian, Mint, Kali, Pop!_OS, Zorin, Winux, elementary (.deb), Fedora, openSUSE (.rpm), Arch, Manjaro (.pkg) ou qualquer um (.tar.gz)</td></tr>
+      <tr><th>Espaço</th><td>cerca de 100 MB (mais os plugins que você quiser)</td></tr>
+      <tr><th>Java</th><td>já vem dentro, não precisa instalar</td></tr>
+      <tr><th>Mini IA (opcional)</th><td>mais cerca de 280 MB, e o Python (tem plugin)</td></tr>
+      <tr><th>Internet</th><td>só pra baixar plugins e a mini IA</td></tr>
+      <tr><th>Preço</th><td>grátis</td></tr>
+    </table>
+  </div>
+  <div>
+    <h2>Novidades</h2>
+    <div class="versao"><h3>Versão 0.7</h3><ul>
+      <li>TazzHelper com IA própria em Python: especialista em programação e mini IA opcional</li>
+      <li>Instalador, TazzCode.exe com Java dentro e ícone novo</li>
+      <li>Pastas organizadas: projetos em Documentos, programa em Arquivos de Programas</li>
+      <li>C e C++ funcionando mesmo com acento no nome do usuário</li>
+      <li>Versão para Linux: .deb, .rpm, Arch e .tar.gz (12 distribuições)</li>
+      <li>Visual novo, 4 temas e a janela de Configurações</li>
+    </ul></div>
+    <div class="versao" style="border-color:var(--coral)"><h3>Versão 0.6</h3><ul>
+      <li>49 plugins de linguagens portáteis</li>
+      <li>Tutorial de instalação no PC para cada linguagem</li>
+    </ul></div>
+  </div>
+</div></section>
+
+<section class="band" id="perguntas" style="padding-top:0"><div class="in" style="max-width:860px;margin-left:max(0px,calc((100% - 1240px)/2))">
+  <h2 style="margin-bottom:12px">Perguntas</h2>
+  <details><summary>É grátis mesmo?</summary><p>Sim. O TazzCode é grátis. Os plugins baixam as linguagens dos sites oficiais delas, que também são grátis.</p></details>
+  <details><summary>Por que o antivírus analisa os programas que eu compilo?</summary><p>Quando você roda C, C++, Go ou Rust, o TazzCode cria um .exe novinho, feito a partir do seu código. O antivírus nunca viu esse arquivo, então analisa por alguns segundos. É normal. No TazzCode, o menu Ajuda explica como evitar isso.</p></details>
+  <details><summary>A IA manda os meus códigos pra internet?</summary><p>Não. A IA do TazzCode roda no seu computador. Só se você escolher o cérebro "Claude pela internet" (que precisa de uma chave paga) as perguntas vão para fora.</p></details>
+  <details><summary>Preciso saber programar?</summary><p>Não! O TazzCode foi feito por quem está aprendendo, pra quem está aprendendo. Ligue o modo professor do TazzHelper e ele te ajuda com dicas.</p></details>
+  <details><summary>Tem para Linux?</summary><p>Tem! São 4 pacotes: <b>.deb</b> (Ubuntu, Debian, Mint, Kali, Pop!_OS, Zorin, Winux, elementary), <b>.rpm</b> (Fedora e openSUSE), <b>.pkg.tar.zst</b> (Arch e Manjaro) e <b>.tar.gz</b> pra qualquer outro. A página de downloads mostra o comando de cada um.</p></details>
+  <details><summary>Onde ficam os meus projetos?</summary><p>Em Documentos\TazzCode\projetos. Os plugins e a mini IA ficam em C:\ProgramData\TazzCode.</p></details>
+</div></section>
+
+<footer class="band"><div class="in">
+  <a class="marca" href="#topo"><img src="img/logo.png" alt="">TazzCode</a>
+  <p>Feito pelo João, em Java. Java, Python e os outros nomes de linguagens são marcas dos seus donos. A mini IA usa o modelo Gemma, do Google, sob os <a href="https://ai.google.dev/gemma/terms">termos de uso da Gemma</a>.</p>
+</div></footer>
+
+<script src="js/site.js"></script>
+</body>
+</html>
