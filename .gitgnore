@@ -1,0 +1,12 @@
+out/
+dist/
+dist-linux/
+__pycache__/
+*.exe
+*.deb
+*.rpm
+*.zst
+*.tar.gz
+config.properties
+erro.log
+travamentos.log
